@@ -1,0 +1,9 @@
+@import "../../../assets/styles/styles.scss";
+.catalog {
+  .container {
+    @include content;
+    max-width: 74.5rem;
+    text-align: center;
+    background-color: $bgcLightGrey;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../../assets/styles/styles.scss";
+.footer {
+  background-color: $bgcLightGreen;
+  .container {
+    @include content;
+    display: flex;
+    padding: 1.75rem 0;
+    .footerText {
+      height: 1.5rem;
+      display: flex;
+      align-items: center;
+      &:first-child {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

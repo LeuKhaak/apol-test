@@ -1,0 +1,11 @@
+@mixin content {
+  width: 90%;
+  max-width: 90rem;
+  margin: 0 auto 0 auto;
+}
+
+@mixin cell {
+  min-width: 2rem;
+  padding: 0.5rem 0.25rem;
+  border: solid 0.1rem $greyBorderColor;
+}

@@ -1,0 +1,9 @@
+@import "../../../assets/styles/styles.scss";
+.row {
+  display: grid;
+  grid-template-columns: 4rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem 15rem;
+  .actions {
+    @include cell;
+    display: flex;
+  }
+}

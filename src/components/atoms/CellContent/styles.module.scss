@@ -1,0 +1,20 @@
+@import "../../../assets/styles/styles.scss";
+.cell {
+  padding: 0.5rem;
+  min-height: 1rem;
+  font-weight: 400;
+  border: solid 0.1rem $greyBorderColor;
+  background-color: $bgcLightGrey;
+  overflow: auto;
+}
+.cellTitle,
+.number {
+  border: none;
+  background: none;
+}
+.cellTitle {
+  font-weight: bold;
+}
+.editing {
+  display: none;
+}

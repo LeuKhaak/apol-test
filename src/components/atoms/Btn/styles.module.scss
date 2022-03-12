@@ -1,0 +1,72 @@
+@import "../../../assets/styles/styles.scss";
+
+.btn {
+  cursor: pointer;
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+.nav {
+  background: $gold;
+}
+
+.edite,
+.delete,
+.submit,
+.add,
+.upload,
+.export {
+  color: $white;
+  background-color: rgb(201, 40, 40);
+}
+
+.edite,
+.submit {
+  background-color: rgb(43, 102, 180);
+  margin-right: 0.5rem;
+}
+
+.upload {
+  background-color: rgb(77, 194, 96);
+  margin-bottom: 0.5rem;
+}
+
+.export {
+  background-color: rgb(77, 194, 96);
+}
+
+.add {
+  background-color: rgb(71, 227, 233);
+  margin-left: 55rem;
+}
+
+//.toggle {
+//  padding: 0;
+//  .icon {
+//    cursor: pointer;
+//    margin-right: 0;
+//    width: 1.5rem;
+//  }
+//}
+//.pageNumber {
+//  @include pageButton;
+//  padding: 0;
+//}
+
+//.pageNumberChecked {
+//  @include pageButton;
+//  padding: 0;
+//  color: $gold;
+//  background:
+//  box-shadow: 0 0.25rem 0.5rem $shadowDark;
+//  border-radius: 0.25rem;
+//}
+
+//.buttonNext {
+//  @include pageButton;
+//  transform: rotateY(180deg);
+//}

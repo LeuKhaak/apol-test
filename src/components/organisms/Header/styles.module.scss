@@ -1,0 +1,18 @@
+@import "../../../assets/styles/styles.scss";
+.header {
+  background-color: $bgcLightYellow;
+  .container {
+    @include content;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    .link {
+      text-decoration: none;
+      color: $mainFontColor;
+      line-height: 0;
+      &:first-child {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

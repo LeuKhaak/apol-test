@@ -1,0 +1,11 @@
+@import "../../../assets/styles/styles.scss";
+
+.wrapper {
+  .container {
+    @include content;
+    .btnWrapper {
+      display: flex;
+      margin: 0.5rem 0 0.5rem 0;
+    }
+  }
+}
