@@ -3,9 +3,18 @@
 .wrapper {
   .container {
     @include content;
+    .topWrapper,
     .btnWrapper {
       display: flex;
+      align-items: center;
       margin: 0.5rem 0 0.5rem 0;
+      .inputWrapper {
+        margin-left: 0.5rem;
+        .input {
+          padding: 0.5rem;
+          border-radius: 0.25rem;
+        }
+      }
     }
   }
 }
