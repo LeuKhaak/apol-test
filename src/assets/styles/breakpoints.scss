@@ -1,14 +1,14 @@
-//@mixin desktop {
-//  @media (max-width: 1324px) {
-//    @content;
-//  }
-//}
+@mixin desktop {
+  @media (max-width: 1380px) {
+    @content;
+  }
+}
 
-//@mixin desktopSmall {
-//  @media (max-width: 1290px) {
-//    @content;
-//  }
-//}
+@mixin desktopSmall {
+  @media (max-width: 1240px) {
+    @content;
+  }
+}
 
 //@mixin tabletLandscape {
 //  @media (max-width: 1142px) {

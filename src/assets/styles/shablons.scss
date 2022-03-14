@@ -9,3 +9,14 @@
   padding: 0.5rem 0.25rem;
   border: solid 0.1rem $greyBorderColor;
 }
+
+@mixin row {
+  display: grid;
+  grid-template-columns: 4rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem 15rem;
+  @include desktop {
+    grid-template-columns: 3rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem 8rem;
+  }
+  @include desktopSmall {
+    grid-template-columns: 3rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem;
+  }
+}

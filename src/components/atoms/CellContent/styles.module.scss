@@ -6,6 +6,10 @@
   border: solid 0.1rem $greyBorderColor;
   background-color: $bgcLightGrey;
   overflow: auto;
+  @include desktop {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.75rem;
+  }
 }
 .cellTitle,
 .number {

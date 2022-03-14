@@ -1,0 +1,29 @@
+@import "../../../assets/styles/styles.scss";
+.editor {
+  display: flex;
+  display: grid;
+  grid-template-columns: 4rem 58rem 15rem;
+  @include desktop {
+    grid-template-columns: 3rem 58rem 8rem;
+  }
+  .formWrapper {
+    .form {
+      display: grid;
+      grid-template-columns: 10rem 7rem 7rem 10rem 10rem 7rem 7rem;
+      .inputWrapper {
+        border: solid 0.1rem $greyBorderColor;
+        padding: 0.5rem;
+        input {
+          max-width: calc(100% - 0.5rem);
+          padding: 0.5rem 0.25rem;
+          min-height: 1rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .actions {
+    @include cell;
+    display: flex;
+  }
+}
