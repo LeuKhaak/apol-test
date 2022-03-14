@@ -8,10 +8,10 @@ function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link to="/" className={styles.link}>
-          <Btn btnText="Table" btnStyle="nav" />
+          <Btn btnText="Home" btnStyle="nav" />
         </Link>
-        <Link to="/map" className={styles.link}>
-          <Btn btnText="Map" btnStyle="nav" />
+        <Link to="/settings" className={styles.link}>
+          <Btn btnText="Settings" btnStyle="nav" />
         </Link>
       </div>
     </header>

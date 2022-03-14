@@ -1,49 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-.btn {
-  cursor: pointer;
-  height: 2rem;
-  padding: 0.5rem;
-  border-radius: 0.25rem;
+.footer {
+  background-color: rgba(188, 245, 182, 0.2);
+}
+
+.footer .container {
+  width: 90%;
+  max-width: 90rem;
+  margin: 0 auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+.footer .container .footerText {
+  height: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: none;
-  background-color: transparent;
 }
 
-.nav {
-  background: #f1b926;
-}
-
-.edite,
-.delete,
-.submit,
-.add,
-.upload,
-.export {
-  color: #fff;
-  background-color: #c92828;
-}
-
-.edite,
-.submit {
-  background-color: #2b66b4;
-  margin-right: 0.5rem;
-}
-
-.upload {
-  background-color: #4dc260;
-  margin-bottom: 0.5rem;
-}
-
-.export {
-  background-color: #4dc260;
-}
-
-.add {
-  background-color: #47e3e9;
-  margin-left: 55rem;
+.footer .container .footerText:first-child {
+  margin-right: 1rem;
 }

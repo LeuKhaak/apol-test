@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Main from "./component";
 import { useSelector, useDispatch } from "react-redux";
@@ -50,8 +50,37 @@ function MainContainer() {
   };
 
   const getStartData = () => {
-    dispatch(actionGetStartData());
+    const userlist = localStorage.getItem("usersList");
+    if (userlist) {
+      dispatch(actionUpdateData(JSON.parse(userlist)));
+    } else dispatch(actionGetStartData());
   };
+
+  const submit = () => {
+    window.localStorage.setItem("usersList", JSON.stringify(personsList));
+  };
+
+  const exportData = () => {
+    const data = JSON.stringify(personsList);
+    const link = document.createElement("a");
+    link.download = "users.json";
+
+    const blob = new Blob([data], { type: "text/plain" });
+
+    link.href = URL.createObjectURL(blob);
+
+    link.click();
+
+    URL.revokeObjectURL(link.href);
+  };
+
+  useEffect(() => {
+    const userlist = localStorage.getItem("usersList");
+    if (userlist) {
+      dispatch(actionUpdateData(JSON.parse(userlist)));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <Main
@@ -60,6 +89,8 @@ function MainContainer() {
       filter={filter}
       filterWord={filterWord}
       type={type}
+      submit={submit}
+      exportData={exportData}
     />
   );
 }
