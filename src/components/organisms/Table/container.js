@@ -1,43 +1,46 @@
 import { React } from "react";
 import Table from "./component";
 import { useSelector, useDispatch } from "react-redux";
-import { actionUpdateData } from "src/store/actions/personsActions";
+import { actionUpdateData } from "src/store/actions/usersActions";
 
 function TableContainer() {
   const dispatch = useDispatch();
 
-  const personsList = useSelector((state) => state.persons.personsList);
+  const usersList = useSelector((state) => state.users.usersList);
+  const error = useSelector((state) => state.users.getError);
+  const loader = useSelector((state) => state.users.loader);
 
-  const deletePerson = (id) => {
+  const deleteUser = (id) => {
     // eslint-disable-next-line no-restricted-globals
     const check = confirm("Are you sure?");
     if (!check) return;
-    const list = [...personsList];
+    const list = [...usersList];
     const newList = list.filter((item) => item[0][1] !== id);
     dispatch(actionUpdateData(newList));
   };
 
-  const editePerson = (ind, row) => {
-    const list = [...personsList];
+  const editeUser = (id, row) => {
+    const list = [...usersList];
+    const ind = list.findIndex((el) => el[0][1] === id);
     list.splice(ind, 1, row);
-
     dispatch(actionUpdateData(list));
   };
 
-  const sortPersons = (arg) => {
-    const list = [...personsList];
+  const sortUsers = (arg) => {
+    const list = [...usersList];
     const ind = list[0].findIndex((item) => item[0] === arg);
     list.sort((a, b) => (a[ind] > b[ind] ? 1 : -1));
-
     dispatch(actionUpdateData(list));
-  }; // list.sort((a, b) => (a.color > b.color) ? 1 : -1)
+  };
 
   return (
     <Table
-      data={personsList}
-      deletePerson={deletePerson}
-      editePerson={editePerson}
-      sortPersons={sortPersons}
+      data={usersList}
+      deleteUser={deleteUser}
+      editeUser={editeUser}
+      sortUsers={sortUsers}
+      error={error}
+      loader={loader}
     />
   );
 }

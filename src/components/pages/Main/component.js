@@ -1,7 +1,7 @@
 import React from "react";
 import * as styles from "./styles.module.scss";
 import Table from "src/components/organisms/Table";
-import Map from "src/components/organisms/Map/index";
+import Map from "src/components/organisms/Map";
 import Btn from "src/components/atoms/Btn";
 
 function Main({

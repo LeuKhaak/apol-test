@@ -1,9 +1,8 @@
 import React from "react";
 import CellContent from "src/components/atoms/CellContent";
-import CellInput from "src/components/molecules/CellInput";
 import * as styles from "./styles.module.scss";
 
-function Cell({ content, cellStyle, mode, id, saveRowData }) {
+function Cell({ content, cellStyle, mode, id }) {
   return (
     <div className={styles.cell}>
       <CellContent
@@ -11,13 +10,6 @@ function Cell({ content, cellStyle, mode, id, saveRowData }) {
         cellStyle={cellStyle}
         mode={mode}
         id={id}
-      />
-      <CellInput
-        content={content}
-        cellStyle={cellStyle}
-        mode={mode}
-        id={id}
-        saveRowData={saveRowData}
       />
     </div>
   );

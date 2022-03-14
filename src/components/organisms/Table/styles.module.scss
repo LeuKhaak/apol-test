@@ -4,4 +4,9 @@
     display: grid;
     grid-template-columns: 4rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem 15rem;
   }
+  .error {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $error;
+  }
 }

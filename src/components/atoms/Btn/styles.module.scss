@@ -21,48 +21,26 @@
 .upload,
 .export {
   color: $white;
-  background-color: rgb(201, 40, 40);
+  background-color: $error;
+}
+
+.inactive {
+  background-color: $inactive;
+  cursor: not-allowed;
 }
 
 .edite,
 .submit {
-  background-color: rgb(43, 102, 180);
+  background-color: $darkBlue;
   margin-right: 0.5rem;
 }
 
 .upload,
 .export {
-  background-color: rgb(77, 194, 96);
+  background-color: $darkGreen;
 }
 
 .add {
-  background-color: rgb(71, 227, 233);
+  background-color: $lightBlue;
   margin-left: 55rem;
 }
-
-//.toggle {
-//  padding: 0;
-//  .icon {
-//    cursor: pointer;
-//    margin-right: 0;
-//    width: 1.5rem;
-//  }
-//}
-//.pageNumber {
-//  @include pageButton;
-//  padding: 0;
-//}
-
-//.pageNumberChecked {
-//  @include pageButton;
-//  padding: 0;
-//  color: $gold;
-//  background:
-//  box-shadow: 0 0.25rem 0.5rem $shadowDark;
-//  border-radius: 0.25rem;
-//}
-
-//.buttonNext {
-//  @include pageButton;
-//  transform: rotateY(180deg);
-//}

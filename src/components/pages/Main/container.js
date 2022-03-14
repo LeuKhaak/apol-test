@@ -5,14 +5,15 @@ import { useSelector, useDispatch } from "react-redux";
 import {
   actionGetStartData,
   actionUpdateData,
-} from "src/store/actions/personsActions";
+} from "src/store/actions/usersActions";
 
 function MainContainer() {
   const dispatch = useDispatch();
 
-  const personsList = useSelector((state) => state.persons.personsList);
+  const usersList = useSelector((state) => state.users.usersList);
 
   const [filterWord, setFilterWord] = useState("");
+
   const type = (event) => {
     setFilterWord(event.target.value);
   };
@@ -25,7 +26,7 @@ function MainContainer() {
 
   const filter = (event) => {
     if (event.key === "Enter") {
-      const list = [...personsList];
+      const list = [...usersList];
       const newList = list.filter((item) =>
         forFilter(item).includes(filterWord)
       );
@@ -34,7 +35,7 @@ function MainContainer() {
   };
 
   const addRow = () => {
-    const newList = [...personsList];
+    const newList = [...usersList];
     const emptyRow = [
       ["id", uuidv4()],
       ["email", ""],
@@ -50,34 +51,31 @@ function MainContainer() {
   };
 
   const getStartData = () => {
-    const userlist = localStorage.getItem("usersList");
-    if (userlist) {
-      dispatch(actionUpdateData(JSON.parse(userlist)));
+    const userslist = localStorage.getItem("usersList");
+    if (userslist) {
+      dispatch(actionUpdateData(JSON.parse(userslist)));
     } else dispatch(actionGetStartData());
   };
 
   const submit = () => {
-    window.localStorage.setItem("usersList", JSON.stringify(personsList));
+    window.localStorage.setItem("usersList", JSON.stringify(usersList));
   };
 
   const exportData = () => {
-    const data = JSON.stringify(personsList);
+    const data = JSON.stringify(usersList);
     const link = document.createElement("a");
     link.download = "users.json";
 
     const blob = new Blob([data], { type: "text/plain" });
-
     link.href = URL.createObjectURL(blob);
-
     link.click();
-
     URL.revokeObjectURL(link.href);
   };
 
   useEffect(() => {
-    const userlist = localStorage.getItem("usersList");
-    if (userlist) {
-      dispatch(actionUpdateData(JSON.parse(userlist)));
+    const userslist = localStorage.getItem("usersList");
+    if (userslist) {
+      dispatch(actionUpdateData(JSON.parse(userslist)));
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -95,5 +93,4 @@ function MainContainer() {
   );
 }
 
-export default Main;
 export const container = MainContainer;

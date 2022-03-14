@@ -2,64 +2,50 @@ import React from "react";
 import * as styles from "./styles.module.scss";
 import Row from "src/components/molecules/Row";
 import Cell from "src/components/molecules/Cell";
+import Loader from "src/components/atoms/Loader";
 
-function Table({ data, deletePerson, editePerson, sortPersons }) {
+function Table({ data, deleteUser, editeUser, sortUsers, error, loader }) {
+  const headers = [
+    ["email", "Email"],
+    ["firstName", "First Name"],
+    ["lastName", "Last Name"],
+    ["position", "Position"],
+    ["project", "Project Name"],
+    ["longitude", "Longitude"],
+    ["latitude", "Latitude"],
+  ];
   return (
     <div className={styles.table}>
       <div className={styles.tableTitles}>
         <Cell content="SNO" cellStyle="cellTitle" />
-        <div style={{ cursor: "pointer" }} onClick={() => sortPersons("email")}>
-          <Cell content="Email" cellStyle="cellTitle" />
-        </div>
-        <div
-          style={{ cursor: "pointer" }}
-          onClick={() => sortPersons("firstName")}
-        >
-          <Cell content="First Name" cellStyle="cellTitle" />
-        </div>
-        <div
-          style={{ cursor: "pointer" }}
-          onClick={() => sortPersons("lastName")}
-        >
-          <Cell content="Last Name" cellStyle="cellTitle" />
-        </div>
-        <div
-          style={{ cursor: "pointer" }}
-          onClick={() => sortPersons("position")}
-        >
-          <Cell content="Position" cellStyle="cellTitle" />
-        </div>
-        <div
-          style={{ cursor: "pointer" }}
-          onClick={() => sortPersons("project")}
-        >
-          <Cell content="Project Name" cellStyle="cellTitle" />
-        </div>
-        <div
-          style={{ cursor: "pointer" }}
-          onClick={() => sortPersons("longitude")}
-        >
-          <Cell content="Longitude" cellStyle="cellTitle" />
-        </div>
-        <div
-          style={{ cursor: "pointer" }}
-          onClick={() => sortPersons("latitude")}
-        >
-          <Cell content="Latitude" cellStyle="cellTitle" />
-        </div>
+
+        {headers.map((el) => (
+          <div
+            key={el[0]}
+            style={{ cursor: "pointer" }}
+            onClick={() => sortUsers(el[0])}
+          >
+            <Cell content={el[1]} cellStyle="cellTitle" />
+          </div>
+        ))}
         <Cell content="Actions" cellStyle="cellTitle" />
       </div>
-
-      {data &&
+      {error ? (
+        <div className={styles.error}>"The request failed!"</div>
+      ) : loader ? (
+        <Loader loader />
+      ) : (
+        data &&
         data.map((el, ind) => (
           <Row
             key={ind}
             number={ind + 1}
             data={el}
-            deletePerson={deletePerson}
-            editePerson={editePerson}
+            deleteUser={deleteUser}
+            editeUser={editeUser}
           />
-        ))}
+        ))
+      )}
     </div>
   );
 }

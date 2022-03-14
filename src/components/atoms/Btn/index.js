@@ -3,8 +3,6 @@ import * as styles from "./styles.module.scss";
 import cn from "classnames";
 
 const Btn = ({
-  location,
-  disp,
   btnText,
   icon,
   btnStyle,
@@ -32,16 +30,6 @@ const Btn = ({
         onClick1();
       }}
     >
-      {icon ? (
-        <img
-          className={styles.icon}
-          src={icon}
-          alt="#"
-          style={{ fill: "red" }}
-        />
-      ) : (
-        ""
-      )}
       <span className={styles.linkText}>{btnText}</span>
     </button>
   );
