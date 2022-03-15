@@ -1,6 +1,6 @@
 import { HashRouter, Route, Switch } from "react-router-dom";
 import Main from "./components/pages/Main";
-import Settings from "./components/pages/Settings";
+import About from "./components/pages/About";
 import Header from "./components/organisms/Header";
 import Footer from "./components/organisms/Footer";
 
@@ -12,7 +12,7 @@ function App() {
         <Switch>
           <>
             <Route path="/" component={Main} exact={true} />
-            <Route path="/settings/" component={Settings} />
+            <Route path="/about/" component={About} />
           </>
         </Switch>
         <Footer />

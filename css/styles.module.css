@@ -1,37 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-.row {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 4rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem 15rem;
-      grid-template-columns: 4rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem 15rem;
-}
-
-@media (max-width: 1380px) {
-  .row {
-    -ms-grid-columns: 3rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem 8rem;
-        grid-template-columns: 3rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem 8rem;
-  }
-}
-
-@media (max-width: 1240px) {
-  .row {
-    -ms-grid-columns: 3rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem;
-        grid-template-columns: 3rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem;
-  }
-}
-
-.row .actions {
-  min-width: 2rem;
+.cell {
   padding: 0.5rem 0.25rem;
+  min-height: 1rem;
+  font-weight: 400;
   border: solid 0.1rem #c5bfbf;
+  background-color: rgba(201, 201, 195, 0.5);
+  overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-@media (max-width: 1240px) {
-  .row .actions {
-    width: 8rem;
-    border: none;
+.cell .cellSimbol {
+  display: none;
+}
+
+@media (max-width: 1380px) {
+  .cell {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.75rem;
   }
+}
+
+.cellTitle,
+.number {
+  border: none;
+  background: none;
+}
+
+.cellTitle {
+  font-weight: bold;
 }

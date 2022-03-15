@@ -12,6 +12,7 @@ function Main({
   filterWord,
   submit,
   exportData,
+  usersList,
 }) {
   return (
     <section className={styles.wrapper}>
@@ -32,7 +33,11 @@ function Main({
         <Table />
         <div className={styles.btnWrapper}>
           <Btn btnText="Submit" btnStyle="submit" onClick={submit} />
-          <Btn btnText="Export" btnStyle="export" onClick={exportData} />
+          <Btn
+            btnText="Export"
+            btnStyle="export"
+            onClick={() => exportData(usersList)}
+          />
           <Btn btnText="Add" btnStyle="add" onClick={addRow} />
         </div>
         <Map />

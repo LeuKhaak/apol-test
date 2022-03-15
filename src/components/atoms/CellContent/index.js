@@ -7,6 +7,12 @@ function CellContent({ content, cellStyle, id }) {
   return (
     <div className={classCell} id={id}>
       {content}
+      <span
+        className={styles.cellSimbol}
+        style={{ display: cellStyle === "simbol" ? "block" : "" }}
+      >
+        &#8595;
+      </span>
     </div>
   );
 }

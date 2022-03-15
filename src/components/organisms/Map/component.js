@@ -5,7 +5,7 @@ function MapPage({ usersList, changeCoords }) {
   window.ymaps.ready(init);
   let myMap;
   function init() {
-    if (!usersList.length) return;
+    if (!usersList) return;
     myMap = new window.ymaps.Map("map", {
       center: [52.1, 23.8],
       zoom: 7,

@@ -1,11 +1,17 @@
 @import "../../../assets/styles/styles.scss";
 .cell {
-  padding: 0.5rem;
+  padding: 0.5rem 0.25rem;
   min-height: 1rem;
   font-weight: 400;
   border: solid 0.1rem $greyBorderColor;
   background-color: $bgcLightGrey;
   overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  .cellSimbol {
+    display: none;
+  }
   @include desktop {
     padding: 0.5rem 0.25rem;
     font-size: 0.75rem;

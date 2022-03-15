@@ -10,8 +10,8 @@ function Header() {
         <Link to="/" className={styles.link}>
           <Btn btnText="Home" btnStyle="nav" />
         </Link>
-        <Link to="/settings" className={styles.link}>
-          <Btn btnText="Settings" btnStyle="nav" />
+        <Link to="/about" className={styles.link}>
+          <Btn btnText="About" btnStyle="nav" />
         </Link>
       </div>
     </header>

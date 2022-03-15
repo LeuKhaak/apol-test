@@ -9,7 +9,7 @@ function Editor({ number, data, editeUser, stopEdition, mode }) {
     stopEdition();
   };
 
-  const saveRowData2 = (event, id) => {
+  const saveRowDataForInput = (event, id) => {
     if (event.key === "Enter") {
       saveRowData(id);
     }
@@ -20,7 +20,7 @@ function Editor({ number, data, editeUser, stopEdition, mode }) {
 
   const [newData, setNewData] = useState(data);
 
-  const edite1 = (ind, event) => {
+  const edit = (ind, event) => {
     const arr = [...newData];
     arr[ind + 1].splice(1, 1, event.target.value);
     setNewData(arr);
@@ -45,8 +45,8 @@ function Editor({ number, data, editeUser, stopEdition, mode }) {
                 <input
                   name={el[0]}
                   value={newData[ind + 1][1]}
-                  onChange={(event) => edite1(ind, event)}
-                  onKeyPress={(event) => saveRowData2(event, data[0][1])}
+                  onChange={(event) => edit(ind, event)}
+                  onKeyPress={(event) => saveRowDataForInput(event, data[0][1])}
                 />
               </div>
             ))}

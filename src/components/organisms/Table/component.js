@@ -17,7 +17,7 @@ function Table({ data, deleteUser, editeUser, sortUsers, error, loader }) {
   return (
     <div className={styles.table}>
       <div className={styles.tableTitles}>
-        <Cell content="SNO" cellStyle="cellTitle" />
+        <Cell content="SNO" />
 
         {headers.map((el) => (
           <div
@@ -25,7 +25,7 @@ function Table({ data, deleteUser, editeUser, sortUsers, error, loader }) {
             style={{ cursor: "pointer" }}
             onClick={() => sortUsers(el[0])}
           >
-            <Cell content={el[1]} cellStyle="cellTitle" />
+            <Cell content={el[1]} cellStyle="simbol" />
           </div>
         ))}
         <Cell content="Actions" cellStyle="cellTitle" />
