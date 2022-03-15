@@ -2,12 +2,19 @@
   width: 90%;
   max-width: 90rem;
   margin: 0 auto 0 auto;
+  @include desktopSmall {
+    width: 95%;
+  }
 }
 
 @mixin cell {
   min-width: 2rem;
   padding: 0.5rem 0.25rem;
   border: solid 0.1rem $greyBorderColor;
+  @include tabletLandscape {
+    min-width: 1.5rem;
+    padding: 0.5rem 0.1rem;
+  }
 }
 
 @mixin row {
@@ -18,5 +25,14 @@
   }
   @include desktopSmall {
     grid-template-columns: 3rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem;
+  }
+  @include tabletLandscape {
+    grid-template-columns: 2rem 8rem 6rem 6rem 8rem 8rem 6rem 6rem;
+  }
+  @include tabletSmall {
+    grid-template-columns: 2rem 7.5rem 5.5rem 5.5rem 7.5rem 7.5rem 5.5rem 5.5rem;
+  }
+  @include tabletSmallSecond {
+    grid-template-columns: 2rem 7rem 5rem 5rem 7rem 7rem 5rem 5rem;
   }
 }

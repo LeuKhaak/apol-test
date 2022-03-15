@@ -2,7 +2,7 @@ import React from "react";
 import CellContent from "src/components/molecules/CellContent";
 import * as styles from "./styles.module.scss";
 
-function Cell({ content, cellStyle, mode, id }) {
+function Cell({ content, cellStyle, cellContentStyle, mode, id }) {
   return (
     <div
       className={styles.cell}
@@ -13,6 +13,7 @@ function Cell({ content, cellStyle, mode, id }) {
       <CellContent
         content={content}
         cellStyle={cellStyle}
+        cellContentStyle={cellContentStyle}
         mode={mode}
         id={id}
       />

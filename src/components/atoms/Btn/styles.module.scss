@@ -43,4 +43,13 @@
 .add {
   background-color: $lightBlue;
   margin-left: 55rem;
+  @include desktopSmall {
+    margin-left: 50.5rem;
+  }
+  @include tabletLandscape {
+    margin-left: 40rem;
+  }
+  @include tabletSmall {
+    margin-left: 36rem;
+  }
 }

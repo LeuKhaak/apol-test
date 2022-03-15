@@ -25,7 +25,11 @@ function Table({ data, deleteUser, editeUser, sortUsers, error, loader }) {
             style={{ cursor: "pointer" }}
             onClick={() => sortUsers(el[0])}
           >
-            <Cell content={el[1]} cellStyle="simbol" />
+            <Cell
+              content={el[1]}
+              cellStyle="cellTitle"
+              cellContentStyle="simbol"
+            />
           </div>
         ))}
         <div className={styles.actionsTitleWrapper}>

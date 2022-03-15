@@ -9,12 +9,21 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  @include tabletSmallSecond {
+    flex-direction: column;
+  }
   .cellSimbol {
     display: none;
+    @include tabletSmallSecond {
+      flex-direction: column;
+    }
   }
   @include desktop {
     padding: 0.5rem 0.25rem;
     font-size: 0.75rem;
+  }
+  @include tabletLandscape {
+    padding: 0.5rem 0.15rem;
   }
 }
 .cellTitle,
@@ -22,7 +31,11 @@
 .number {
   border: none;
   background: none;
-}
-.cellTitle {
   font-weight: bold;
+  @include tabletLandscape {
+    font-weight: 400;
+  }
+}
+.number {
+  font-weight: 400;
 }
