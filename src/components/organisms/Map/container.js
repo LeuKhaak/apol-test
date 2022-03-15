@@ -16,7 +16,6 @@ function MapPageContainer() {
       ["longitude", lon.toFixed(2)],
       ["latitude", lat.toFixed(2)]
     );
-    console.log(arr);
     dispatch(actionUpdateData(arr));
   };
 
