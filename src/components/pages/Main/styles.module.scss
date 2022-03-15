@@ -3,6 +3,7 @@
 .wrapper {
   .container {
     @include content;
+    min-height: 86vh;
     .topWrapper,
     .btnWrapper {
       display: flex;

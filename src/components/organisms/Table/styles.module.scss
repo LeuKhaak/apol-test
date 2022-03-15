@@ -2,6 +2,12 @@
 .table {
   .tableTitles {
     @include row;
+    .actionsTitleWrapper {
+      border: none;
+      @include desktopSmall {
+        display: none;
+      }
+    }
   }
   .error {
     font-size: 2rem;

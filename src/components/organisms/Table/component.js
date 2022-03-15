@@ -17,7 +17,7 @@ function Table({ data, deleteUser, editeUser, sortUsers, error, loader }) {
   return (
     <div className={styles.table}>
       <div className={styles.tableTitles}>
-        <Cell content="SNO" />
+        <Cell content="SNO" cellStyle="cellTitle" />
 
         {headers.map((el) => (
           <div
@@ -28,7 +28,9 @@ function Table({ data, deleteUser, editeUser, sortUsers, error, loader }) {
             <Cell content={el[1]} cellStyle="simbol" />
           </div>
         ))}
-        <Cell content="Actions" cellStyle="cellTitle" />
+        <div className={styles.actionsTitleWrapper}>
+          <Cell content="Actions" cellStyle="cellTitleActions" />
+        </div>
       </div>
       {error ? (
         <div className={styles.error}>"The request failed!"</div>

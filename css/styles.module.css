@@ -1,40 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-.cell {
-  padding: 0.5rem 0.25rem;
-  min-height: 1rem;
-  font-weight: 400;
-  border: solid 0.1rem #c5bfbf;
-  background-color: rgba(201, 201, 195, 0.5);
-  overflow: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.cell .cellSimbol {
-  display: none;
+.table .tableTitles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem 15rem;
+      grid-template-columns: 4rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem 15rem;
 }
 
 @media (max-width: 1380px) {
-  .cell {
-    padding: 0.5rem 0.25rem;
-    font-size: 0.75rem;
+  .table .tableTitles {
+    -ms-grid-columns: 3rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem 8rem;
+        grid-template-columns: 3rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem 8rem;
   }
 }
 
-.cellTitle,
-.number {
-  border: none;
-  background: none;
+@media (max-width: 1240px) {
+  .table .tableTitles {
+    -ms-grid-columns: 3rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem;
+        grid-template-columns: 3rem 10rem 7rem 7rem 10rem 10rem 7rem 7rem;
+  }
 }
 
-.cellTitle {
-  font-weight: bold;
+.table .tableTitles .actionsTitleWrapper {
+  border: none;
+}
+
+@media (max-width: 1240px) {
+  .table .tableTitles .actionsTitleWrapper {
+    display: none;
+  }
+}
+
+.table .error {
+  font-size: 2rem;
+  font-weight: 500;
+  color: crimson;
 }
