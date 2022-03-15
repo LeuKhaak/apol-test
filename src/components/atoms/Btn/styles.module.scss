@@ -52,4 +52,25 @@
   @include tabletSmall {
     margin-left: 36rem;
   }
+  @include tabletSmallSecond {
+    margin-left: 31rem;
+  }
+  @include mobile {
+    margin-left: 28rem;
+  }
+  @include mobileSecond {
+    margin-left: 23rem;
+  }
+  @include mobileSmall {
+    margin-left: 19rem;
+  }
+  @include mobileSmallSecond {
+    margin-left: 16rem;
+  }
+  @include mobileSmallThird {
+    margin-left: 12rem;
+  }
+  @include mobileSmallest {
+    margin-left: 8rem;
+  }
 }

@@ -17,7 +17,7 @@ function Table({ data, deleteUser, editeUser, sortUsers, error, loader }) {
   return (
     <div className={styles.table}>
       <div className={styles.tableTitles}>
-        <Cell content="SNO" cellStyle="cellTitle" />
+        <Cell content="№" cellStyle="cellTitle" />
 
         {headers.map((el) => (
           <div

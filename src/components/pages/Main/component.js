@@ -15,7 +15,10 @@ function Main({
   usersList,
 }) {
   return (
-    <section className={styles.wrapper}>
+    <section
+      className={styles.wrapper}
+      style={{ backgroundImage: usersList.length ? "none" : "" }}
+    >
       <div className={styles.container}>
         <div className={styles.topWrapper}>
           <Btn btnText="Upload" btnStyle="upload" onClick={getStartData} />

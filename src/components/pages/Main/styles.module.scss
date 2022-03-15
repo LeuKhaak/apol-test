@@ -1,6 +1,9 @@
 @import "../../../assets/styles/styles.scss";
 
 .wrapper {
+  background-image: url(../../../assets/images/bgi.PNG);
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
   .container {
     @include content;
     min-height: 86vh;

@@ -5,7 +5,7 @@ import cn from "classnames";
 function CellContent({ content, cellStyle, cellContentStyle, id }) {
   const classCell = cn(styles.cell, styles[cellStyle]);
   return (
-    <div className={classCell} id={id}>
+    <p className={classCell} id={id}>
       {content}
       <span
         className={styles.cellSimbol}
@@ -13,7 +13,7 @@ function CellContent({ content, cellStyle, cellContentStyle, id }) {
       >
         &#8595;
       </span>
-    </div>
+    </p>
   );
 }
 

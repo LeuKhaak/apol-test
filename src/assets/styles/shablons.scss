@@ -5,6 +5,9 @@
   @include desktopSmall {
     width: 95%;
   }
+  @include mobileSmall {
+    width: 98%;
+  }
 }
 
 @mixin cell {
@@ -33,6 +36,25 @@
     grid-template-columns: 2rem 7.5rem 5.5rem 5.5rem 7.5rem 7.5rem 5.5rem 5.5rem;
   }
   @include tabletSmallSecond {
-    grid-template-columns: 2rem 7rem 5rem 5rem 7rem 7rem 5rem 5rem;
+    grid-template-columns: 2rem 7rem 5rem 3rem 7rem 7rem 5rem 5rem;
+  }
+  @include mobile {
+    grid-template-columns: 2rem 7rem 4.5rem 3rem 6.5rem 6.5rem 4rem 3.5rem;
+  }
+  @include mobileSecond {
+    grid-template-columns: 2rem 6rem 3.5rem 3rem 5.5rem 5.5rem 4rem 3.5rem;
+  }
+  @include mobileSmall {
+    grid-template-columns: 2rem 5rem 3.5rem 3rem 4rem 4rem 4rem 3.5rem;
+  }
+  @include mobileSmallSecond {
+    grid-template-columns: 2rem 4rem 3rem 3rem 3.5rem 3.5rem 4rem 3.5rem;
+  }
+  @include mobileSmallThird {
+    grid-template-columns: 1.85rem 3rem 2.5rem 2.5rem 3rem 3rem 3.75rem 3.25rem;
+  }
+  @include mobileSmallest {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
