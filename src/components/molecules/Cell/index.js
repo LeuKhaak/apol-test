@@ -7,7 +7,7 @@ function Cell({ content, cellStyle, cellContentStyle, mode, id }) {
     <div
       className={styles.cell}
       style={{
-        height: cellStyle === "cellTitleActions" ? "calc(100% - 1.1rem)" : "",
+        height: cellStyle === "cellTitleActions" ? "calc(100% - 1.2rem)" : "",
       }}
     >
       <CellContent
