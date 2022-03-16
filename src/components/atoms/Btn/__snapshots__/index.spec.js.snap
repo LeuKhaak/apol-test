@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Btn testing: is Btn contain nothing 1`] = `
+<button
+  className=""
+  onClick={[Function]}
+>
+  <span />
+</button>
+`;
+
+exports[`Btn testing: is Btn contain text 1`] = `
+<button
+  className=""
+  onClick={[Function]}
+>
+  <span>
+    testText
+  </span>
+</button>
+`;
+
+exports[`Btn testing: is Btn not displayed 1`] = `
+<button
+  className=""
+  onClick={[Function]}
+>
+  <span>
+    testText
+  </span>
+</button>
+`;

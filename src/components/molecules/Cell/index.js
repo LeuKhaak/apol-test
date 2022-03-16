@@ -1,5 +1,5 @@
 import React from "react";
-import CellContent from "src/components/molecules/CellContent";
+import CellContent from "../../molecules/CellContent";
 import * as styles from "./styles.module.scss";
 
 function Cell({ content, cellStyle, cellContentStyle, mode, id }) {

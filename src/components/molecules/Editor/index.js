@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from "react";
 import * as styles from "./styles.module.scss";
-import Cell from "src/components//molecules/Cell";
-import Btn from "src/components/atoms/Btn";
+import Cell from "../../molecules/Cell";
+import Btn from "../../atoms/Btn";
 
 function Editor({ number, data, editeUser, stopEdition, mode }) {
   const saveRowData = (id) => {

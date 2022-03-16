@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cell testing: is Cell has style height 1`] = `
+<div
+  style={
+    Object {
+      "height": "calc(100% - 1.2rem)",
+    }
+  }
+>
+  <CellContent
+    cellStyle="cellTitleActions"
+  />
+</div>
+`;

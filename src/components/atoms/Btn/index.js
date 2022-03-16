@@ -5,7 +5,7 @@ import cn from "classnames";
 const Btn = ({ btnText, btnStyle, type, onClick, arg, arg2, id }) => {
   const classBtn = cn(styles.btn, styles[btnStyle], styles[type]);
 
-  const onClick1 = () => {
+  const onClickFunc = () => {
     if (onClick) onClick(arg, arg2);
   };
 
@@ -14,7 +14,7 @@ const Btn = ({ btnText, btnStyle, type, onClick, arg, arg2, id }) => {
       className={classBtn}
       id={id}
       onClick={() => {
-        onClick1();
+        onClickFunc();
       }}
     >
       <span className={styles.linkText}>{btnText}</span>

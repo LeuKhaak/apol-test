@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table testing: is Error shown 1`] = `
+<div>
+  <div>
+    <Cell
+      cellStyle="cellTitle"
+      content="№"
+    />
+    <div
+      key="email"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <Cell
+        cellContentStyle="simbol"
+        cellStyle="cellTitle"
+        content="Email"
+      />
+    </div>
+    <div
+      key="firstName"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <Cell
+        cellContentStyle="simbol"
+        cellStyle="cellTitle"
+        content="First Name"
+      />
+    </div>
+    <div
+      key="lastName"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <Cell
+        cellContentStyle="simbol"
+        cellStyle="cellTitle"
+        content="Last Name"
+      />
+    </div>
+    <div
+      key="position"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <Cell
+        cellContentStyle="simbol"
+        cellStyle="cellTitle"
+        content="Position"
+      />
+    </div>
+    <div
+      key="project"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <Cell
+        cellContentStyle="simbol"
+        cellStyle="cellTitle"
+        content="Project Name"
+      />
+    </div>
+    <div
+      key="longitude"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <Cell
+        cellContentStyle="simbol"
+        cellStyle="cellTitle"
+        content="Longitude"
+      />
+    </div>
+    <div
+      key="latitude"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <Cell
+        cellContentStyle="simbol"
+        cellStyle="cellTitle"
+        content="Latitude"
+      />
+    </div>
+    <div>
+      <Cell
+        cellStyle="cellTitleActions"
+        content="Actions"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table testing: is Loader shown 1`] = `
+<div>
+  <div>
+    <Cell
+      cellStyle="cellTitle"
+      content="№"
+    />
+    <div
+      key="email"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <Cell
+        cellContentStyle="simbol"
+        cellStyle="cellTitle"
+        content="Email"
+      />
+    </div>
+    <div
+      key="firstName"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <Cell
+        cellContentStyle="simbol"
+        cellStyle="cellTitle"
+        content="First Name"
+      />
+    </div>
+    <div
+      key="lastName"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <Cell
+        cellContentStyle="simbol"
+        cellStyle="cellTitle"
+        content="Last Name"
+      />
+    </div>
+    <div
+      key="position"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <Cell
+        cellContentStyle="simbol"
+        cellStyle="cellTitle"
+        content="Position"
+      />
+    </div>
+    <div
+      key="project"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <Cell
+        cellContentStyle="simbol"
+        cellStyle="cellTitle"
+        content="Project Name"
+      />
+    </div>
+    <div
+      key="longitude"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <Cell
+        cellContentStyle="simbol"
+        cellStyle="cellTitle"
+        content="Longitude"
+      />
+    </div>
+    <div
+      key="latitude"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <Cell
+        cellContentStyle="simbol"
+        cellStyle="cellTitle"
+        content="Latitude"
+      />
+    </div>
+    <div>
+      <Cell
+        cellStyle="cellTitleActions"
+        content="Actions"
+      />
+    </div>
+  </div>
+  <Loader
+    loader={true}
+  />
+</div>
+`;

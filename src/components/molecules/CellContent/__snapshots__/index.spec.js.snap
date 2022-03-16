@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CellContent testing: is CellContent contain text 1`] = `
+<p
+  className=""
+>
+  testText
+  <span
+    style={
+      Object {
+        "display": "",
+      }
+    }
+  >
+    ↓
+  </span>
+</p>
+`;
+
+exports[`CellContent testing: is CellContent has sortIcon 1`] = `
+<p
+  className=""
+>
+  testText
+  <span
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    ↓
+  </span>
+</p>
+`;

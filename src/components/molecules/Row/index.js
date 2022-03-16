@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import * as styles from "./styles.module.scss";
-import Cell from "src/components//molecules/Cell";
-import Btn from "src/components/atoms/Btn";
+import Cell from "../../molecules/Cell";
+import Btn from "../../atoms/Btn";
 import Editor from "../Editor";
 
 function Row({ number, data, deleteUser, editeUser }) {

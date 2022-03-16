@@ -1,8 +1,8 @@
 import React from "react";
 import * as styles from "./styles.module.scss";
-import Row from "src/components/molecules/Row";
-import Cell from "src/components/molecules/Cell";
-import Loader from "src/components/atoms/Loader";
+import Row from "../../molecules/Row";
+import Cell from "../../molecules/Cell";
+import Loader from "../../atoms/Loader";
 
 function Table({ data, deleteUser, editeUser, sortUsers, error, loader }) {
   const headers = [
