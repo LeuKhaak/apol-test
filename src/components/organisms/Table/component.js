@@ -1,6 +1,6 @@
 import React from "react";
 import * as styles from "./styles.module.scss";
-import Row from "../../molecules/Row";
+import Row from "../Row";
 import TableTitle from "../../molecules/TableTitle/index";
 import Cell from "../../molecules/Cell";
 import Loader from "../../atoms/Loader";

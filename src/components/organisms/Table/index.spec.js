@@ -16,14 +16,14 @@ const setComponent = (props) => shallow(<Table {...props} />);
 describe("Table testing:", () => {
   test("is Error shown", () => {
     component = setComponent({
-      getError: true,
+      error: true,
     });
     expect(component).toMatchSnapshot();
   });
 
   test("is Loader shown", () => {
     component = setComponent({
-      getError: null,
+      error: null,
       loader: true,
     });
     expect(component).toMatchSnapshot();
@@ -31,7 +31,7 @@ describe("Table testing:", () => {
 
   test("is Table rendered", () => {
     component = setComponent({
-      getError: null,
+      error: null,
       loader: false,
       data: data,
     });

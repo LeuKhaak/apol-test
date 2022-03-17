@@ -17,24 +17,26 @@ describe("Input testing:", () => {
     expect(component).toMatchSnapshot();
   });
 
-  //test("check onKeyPressFunc", () => { // TypeError: saveRowDataForInput is not a function
-  //  component = setComponent({
-  //    ind: 0,
-  //    el: ["email", ""],
-  //    onKeyPress: onKeyPress,
-  //  });
-  //  component.find("input").simulate("keypress", { key: "Enter", value: "Sk" });
-  //  expect(onKeyPress).toHaveBeenCalled();
-  //});
+  test("check onKeyPressFunc", () => {
+    // TypeError: saveRowDataForInput is not a function
+    component = setComponent({
+      ind: 0,
+      el: ["email", ""],
+      saveRowDataForInput: onKeyPress,
+    });
+    component.find("input").simulate("keypress", { key: "Enter", value: "Sk" });
+    expect(onKeyPress).toHaveBeenCalled();
+  });
 
-  //test("check onChangeFunc", () => { //TypeError: edit is not a function
-  //  component = setComponent({
-  //    ind: 0,
-  //    userId: "gds12l",
-  //    el: ["email", ""],
-  //    onChange: onChange,
-  //  });
-  //  component.find("input").simulate("change", { target: { value: "s" } });
-  //  expect(onChange).toHaveBeenCalled();
-  //});
+  test("check onChangeFunc", () => {
+    //TypeError: edit is not a function
+    component = setComponent({
+      ind: 0,
+      userId: "gds12l",
+      el: ["email", ""],
+      edit: onChange,
+    });
+    component.find("input").simulate("change", { target: { value: "s" } });
+    expect(onChange).toHaveBeenCalled();
+  });
 });

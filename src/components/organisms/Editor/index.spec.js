@@ -3,7 +3,6 @@ import { shallow } from "enzyme";
 import Editor from ".";
 
 let component = null;
-const onChange = jest.fn();
 const data = [
   ["a", "b"],
   ["c", "d"],
