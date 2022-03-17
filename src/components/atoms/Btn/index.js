@@ -2,11 +2,13 @@ import React from "react";
 import * as styles from "./styles.module.scss";
 import cn from "classnames";
 
-const Btn = ({ btnText, btnStyle, type, onClick, arg, arg2, id }) => {
+const Btn = ({ btnText, btnStyle, type, onClick, id }) => {
   const classBtn = cn(styles.btn, styles[btnStyle], styles[type]);
 
   const onClickFunc = () => {
-    if (onClick) onClick(arg, arg2);
+    if (onClick) {
+      onClick(id);
+    }
   };
 
   return (

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input testing: is Input rendered 1`] = `
+<div>
+  <input
+    id="undefinedemail"
+    name="email"
+    onChange={[Function]}
+    onKeyPress={[Function]}
+    value=""
+  />
+</div>
+`;

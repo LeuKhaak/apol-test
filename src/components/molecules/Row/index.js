@@ -1,14 +1,14 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import * as styles from "./styles.module.scss";
 import Cell from "../../molecules/Cell";
 import Btn from "../../atoms/Btn";
 import Editor from "../Editor";
 
-function Row({ number, data, deleteUser, editeUser }) {
+function Row({ number, data, deleteUser, editUser }) {
   const [mode, setMode] = useState("usial");
 
   const startEdition = () => {
-    setMode("edite");
+    setMode("edit");
   };
 
   const stopEdition = () => {
@@ -22,7 +22,7 @@ function Row({ number, data, deleteUser, editeUser }) {
     <div>
       <div
         className={styles.row}
-        style={{ display: mode === "edite" ? "none" : "" }}
+        style={{ display: mode === "edit" ? "none" : "" }}
       >
         <Cell content={number} cellStyle="number" width="3rem" />
         {withoutID &&
@@ -31,16 +31,16 @@ function Row({ number, data, deleteUser, editeUser }) {
           ))}
         <div className={styles.actions}>
           <Btn
-            id={number}
-            btnText="Edite"
-            btnStyle="edite"
-            onClick={() => startEdition()}
+            id={data[0][1]}
+            btnText="Edit"
+            btnStyle="edit"
+            onClick={startEdition}
           />
           <Btn
-            id={number}
+            id={data[0][1]}
             btnText="Delete"
             btnStyle="delete"
-            onClick={() => deleteUser(data[0][1])}
+            onClick={deleteUser}
           />
         </div>
       </div>
@@ -48,7 +48,7 @@ function Row({ number, data, deleteUser, editeUser }) {
         data={data}
         mode={mode}
         number={number}
-        editeUser={editeUser}
+        editUser={editUser}
         stopEdition={stopEdition}
         deleteUser={deleteUser}
       />

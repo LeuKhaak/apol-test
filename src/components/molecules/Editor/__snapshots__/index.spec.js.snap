@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Editor testing: is Editor rendered 1`] = `
+<div
+  style={
+    Object {
+      "display": "none",
+    }
+  }
+>
+  <Cell
+    cellStyle="number"
+    width="3rem"
+  />
+  <div>
+    <form>
+      <Input
+        edit={[Function]}
+        el={
+          Array [
+            "c",
+            "d",
+          ]
+        }
+        ind={0}
+        key="0"
+        saveRowDataForInput={[Function]}
+        userId="b"
+        value="d"
+      />
+      <Input
+        edit={[Function]}
+        el={
+          Array [
+            "e",
+            "f",
+          ]
+        }
+        ind={1}
+        key="1"
+        saveRowDataForInput={[Function]}
+        userId="b"
+        value="f"
+      />
+      <Input
+        edit={[Function]}
+        el={
+          Array [
+            "g",
+            "h",
+          ]
+        }
+        ind={2}
+        key="2"
+        saveRowDataForInput={[Function]}
+        userId="b"
+        value="h"
+      />
+    </form>
+  </div>
+  <div>
+    <Btn
+      btnStyle="edit"
+      btnText="Save"
+      id="b"
+      onClick={[Function]}
+    />
+    <Btn
+      btnStyle="inactive"
+      btnText="Delete"
+    />
+  </div>
+</div>
+`;

@@ -7,111 +7,69 @@ exports[`Table testing: is Error shown 1`] = `
       cellStyle="cellTitle"
       content="№"
     />
-    <div
+    <TableTitle
+      el={
+        Array [
+          "email",
+          "Email",
+        ]
+      }
       key="email"
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
+    />
+    <TableTitle
+      el={
+        Array [
+          "firstName",
+          "First Name",
+        ]
       }
-    >
-      <Cell
-        cellContentStyle="simbol"
-        cellStyle="cellTitle"
-        content="Email"
-      />
-    </div>
-    <div
       key="firstName"
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
+    />
+    <TableTitle
+      el={
+        Array [
+          "lastName",
+          "Last Name",
+        ]
       }
-    >
-      <Cell
-        cellContentStyle="simbol"
-        cellStyle="cellTitle"
-        content="First Name"
-      />
-    </div>
-    <div
       key="lastName"
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
+    />
+    <TableTitle
+      el={
+        Array [
+          "position",
+          "Position",
+        ]
       }
-    >
-      <Cell
-        cellContentStyle="simbol"
-        cellStyle="cellTitle"
-        content="Last Name"
-      />
-    </div>
-    <div
       key="position"
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
+    />
+    <TableTitle
+      el={
+        Array [
+          "project",
+          "Project Name",
+        ]
       }
-    >
-      <Cell
-        cellContentStyle="simbol"
-        cellStyle="cellTitle"
-        content="Position"
-      />
-    </div>
-    <div
       key="project"
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
+    />
+    <TableTitle
+      el={
+        Array [
+          "longitude",
+          "Longitude",
+        ]
       }
-    >
-      <Cell
-        cellContentStyle="simbol"
-        cellStyle="cellTitle"
-        content="Project Name"
-      />
-    </div>
-    <div
       key="longitude"
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
+    />
+    <TableTitle
+      el={
+        Array [
+          "latitude",
+          "Latitude",
+        ]
       }
-    >
-      <Cell
-        cellContentStyle="simbol"
-        cellStyle="cellTitle"
-        content="Longitude"
-      />
-    </div>
-    <div
       key="latitude"
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
-      }
-    >
-      <Cell
-        cellContentStyle="simbol"
-        cellStyle="cellTitle"
-        content="Latitude"
-      />
-    </div>
+    />
     <div>
       <Cell
         cellStyle="cellTitleActions"
@@ -129,111 +87,69 @@ exports[`Table testing: is Loader shown 1`] = `
       cellStyle="cellTitle"
       content="№"
     />
-    <div
+    <TableTitle
+      el={
+        Array [
+          "email",
+          "Email",
+        ]
+      }
       key="email"
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
+    />
+    <TableTitle
+      el={
+        Array [
+          "firstName",
+          "First Name",
+        ]
       }
-    >
-      <Cell
-        cellContentStyle="simbol"
-        cellStyle="cellTitle"
-        content="Email"
-      />
-    </div>
-    <div
       key="firstName"
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
+    />
+    <TableTitle
+      el={
+        Array [
+          "lastName",
+          "Last Name",
+        ]
       }
-    >
-      <Cell
-        cellContentStyle="simbol"
-        cellStyle="cellTitle"
-        content="First Name"
-      />
-    </div>
-    <div
       key="lastName"
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
+    />
+    <TableTitle
+      el={
+        Array [
+          "position",
+          "Position",
+        ]
       }
-    >
-      <Cell
-        cellContentStyle="simbol"
-        cellStyle="cellTitle"
-        content="Last Name"
-      />
-    </div>
-    <div
       key="position"
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
+    />
+    <TableTitle
+      el={
+        Array [
+          "project",
+          "Project Name",
+        ]
       }
-    >
-      <Cell
-        cellContentStyle="simbol"
-        cellStyle="cellTitle"
-        content="Position"
-      />
-    </div>
-    <div
       key="project"
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
+    />
+    <TableTitle
+      el={
+        Array [
+          "longitude",
+          "Longitude",
+        ]
       }
-    >
-      <Cell
-        cellContentStyle="simbol"
-        cellStyle="cellTitle"
-        content="Project Name"
-      />
-    </div>
-    <div
       key="longitude"
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
+    />
+    <TableTitle
+      el={
+        Array [
+          "latitude",
+          "Latitude",
+        ]
       }
-    >
-      <Cell
-        cellContentStyle="simbol"
-        cellStyle="cellTitle"
-        content="Longitude"
-      />
-    </div>
-    <div
       key="latitude"
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
-      }
-    >
-      <Cell
-        cellContentStyle="simbol"
-        cellStyle="cellTitle"
-        content="Latitude"
-      />
-    </div>
+    />
     <div>
       <Cell
         cellStyle="cellTitleActions"
@@ -243,6 +159,110 @@ exports[`Table testing: is Loader shown 1`] = `
   </div>
   <Loader
     loader={true}
+  />
+</div>
+`;
+
+exports[`Table testing: is Table rendered 1`] = `
+<div>
+  <div>
+    <Cell
+      cellStyle="cellTitle"
+      content="№"
+    />
+    <TableTitle
+      el={
+        Array [
+          "email",
+          "Email",
+        ]
+      }
+      key="email"
+    />
+    <TableTitle
+      el={
+        Array [
+          "firstName",
+          "First Name",
+        ]
+      }
+      key="firstName"
+    />
+    <TableTitle
+      el={
+        Array [
+          "lastName",
+          "Last Name",
+        ]
+      }
+      key="lastName"
+    />
+    <TableTitle
+      el={
+        Array [
+          "position",
+          "Position",
+        ]
+      }
+      key="position"
+    />
+    <TableTitle
+      el={
+        Array [
+          "project",
+          "Project Name",
+        ]
+      }
+      key="project"
+    />
+    <TableTitle
+      el={
+        Array [
+          "longitude",
+          "Longitude",
+        ]
+      }
+      key="longitude"
+    />
+    <TableTitle
+      el={
+        Array [
+          "latitude",
+          "Latitude",
+        ]
+      }
+      key="latitude"
+    />
+    <div>
+      <Cell
+        cellStyle="cellTitleActions"
+        content="Actions"
+      />
+    </div>
+  </div>
+  <Row
+    data={
+      Array [
+        Array [
+          "a",
+          "b",
+        ],
+        Array [
+          "c",
+          "d",
+        ],
+        Array [
+          "e",
+          "f",
+        ],
+        Array [
+          "g",
+          "h",
+        ],
+      ]
+    }
+    key="0"
+    number={1}
   />
 </div>
 `;

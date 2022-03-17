@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Editor testing: is Editor rendered 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "display": "",
+      }
+    }
+  >
+    <Cell
+      cellStyle="number"
+      width="3rem"
+    />
+    <Cell
+      content="d"
+      id="c"
+      key="0"
+      mode="usial"
+    />
+    <Cell
+      content="f"
+      id="e"
+      key="1"
+      mode="usial"
+    />
+    <Cell
+      content="h"
+      id="g"
+      key="2"
+      mode="usial"
+    />
+    <div>
+      <Btn
+        btnStyle="edit"
+        btnText="Edit"
+        id="b"
+        onClick={[Function]}
+      />
+      <Btn
+        btnStyle="delete"
+        btnText="Delete"
+        id="b"
+      />
+    </div>
+  </div>
+  <Editor
+    data={
+      Array [
+        Array [
+          "a",
+          "b",
+        ],
+        Array [
+          "c",
+          "d",
+        ],
+        Array [
+          "e",
+          "f",
+        ],
+        Array [
+          "g",
+          "h",
+        ],
+      ]
+    }
+    mode="usial"
+    stopEdition={[Function]}
+  />
+</div>
+`;

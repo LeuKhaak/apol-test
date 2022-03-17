@@ -1,10 +1,11 @@
 import React from "react";
 import * as styles from "./styles.module.scss";
 import Row from "../../molecules/Row";
+import TableTitle from "../../molecules/TableTitle/index";
 import Cell from "../../molecules/Cell";
 import Loader from "../../atoms/Loader";
 
-function Table({ data, deleteUser, editeUser, sortUsers, error, loader }) {
+function Table({ data, deleteUser, editUser, sortUsers, error, loader }) {
   const headers = [
     ["email", "Email"],
     ["firstName", "First Name"],
@@ -20,17 +21,7 @@ function Table({ data, deleteUser, editeUser, sortUsers, error, loader }) {
         <Cell content="№" cellStyle="cellTitle" />
 
         {headers.map((el) => (
-          <div
-            key={el[0]}
-            style={{ cursor: "pointer" }}
-            onClick={() => sortUsers(el[0])}
-          >
-            <Cell
-              content={el[1]}
-              cellStyle="cellTitle"
-              cellContentStyle="simbol"
-            />
-          </div>
+          <TableTitle key={el[0]} el={el} sortUsers={sortUsers} />
         ))}
         <div className={styles.actionsTitleWrapper}>
           <Cell content="Actions" cellStyle="cellTitleActions" />
@@ -48,7 +39,7 @@ function Table({ data, deleteUser, editeUser, sortUsers, error, loader }) {
             number={ind + 1}
             data={el}
             deleteUser={deleteUser}
-            editeUser={editeUser}
+            editUser={editUser}
           />
         ))
       )}

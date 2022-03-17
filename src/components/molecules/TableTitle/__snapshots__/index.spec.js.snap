@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableTitle testing: is TableTitlerendered 1`] = `
+<div
+  id="email"
+  key="email"
+  onClick={[Function]}
+  style={
+    Object {
+      "cursor": "pointer",
+    }
+  }
+>
+  <Cell
+    cellContentStyle="simbol"
+    cellStyle="cellTitle"
+    content="gfdr"
+  />
+</div>
+`;

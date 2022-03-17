@@ -1,0 +1,12 @@
+@import "../../../assets/styles/styles.scss";
+
+.inputWrapper {
+  border: solid 0.1rem $greyBorderColor;
+  padding: 0.5rem;
+  input {
+    max-width: calc(100% - 0.5rem);
+    padding: 0.5rem 0.25rem;
+    min-height: 1rem;
+    font-weight: 400;
+  }
+}

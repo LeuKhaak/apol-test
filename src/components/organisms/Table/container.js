@@ -19,7 +19,7 @@ function TableContainer() {
     dispatch(actionUpdateData(newList));
   };
 
-  const editeUser = (id, row) => {
+  const editUser = (id, row) => {
     const list = [...usersList];
     const ind = list.findIndex((el) => el[0][1] === id);
     list.splice(ind, 1, row);
@@ -37,7 +37,7 @@ function TableContainer() {
     <Table
       data={usersList}
       deleteUser={deleteUser}
-      editeUser={editeUser}
+      editUser={editUser}
       sortUsers={sortUsers}
       error={error}
       loader={loader}

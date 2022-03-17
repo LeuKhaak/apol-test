@@ -3,10 +3,15 @@ import { shallow } from "enzyme";
 import Table from "./component";
 
 let component = null;
+const data = [
+  [
+    ["a", "b"],
+    ["c", "d"],
+    ["e", "f"],
+    ["g", "h"],
+  ],
+];
 const setComponent = (props) => shallow(<Table {...props} />);
-beforeEach(() => {
-  component = setComponent();
-});
 
 describe("Table testing:", () => {
   test("is Error shown", () => {
@@ -24,21 +29,12 @@ describe("Table testing:", () => {
     expect(component).toMatchSnapshot();
   });
 
-  //test("is CardList rendered", () => {
-  //  component = setComponent({
-  //    getError: null,
-  //    loader: false,
-  //    data: [
-  //      {
-  //        char_id: 1,
-  //        name: "Bill",
-  //      },
-  //      {
-  //        char_id: 2,
-  //        name: "Cat",
-  //      },
-  //    ],
-  //  });
-  //  expect(component).toMatchSnapshot();
-  //});
+  test("is Table rendered", () => {
+    component = setComponent({
+      getError: null,
+      loader: false,
+      data: data,
+    });
+    expect(component).toMatchSnapshot();
+  });
 });
